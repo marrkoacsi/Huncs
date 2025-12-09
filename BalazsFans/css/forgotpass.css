@@ -1,0 +1,106 @@
+/* Alap beállítások */
+body {
+  font-family: 'Montserrat', sans-serif;
+  background: linear-gradient(to right, #090e1a, #14213d);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+/* Űrlap konténer */
+form {
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid #00aff0;
+  border-radius: 16px;
+  backdrop-filter: blur(8px);
+  padding: 30px 40px;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 0 15px rgba(0, 175, 240, 0.1);
+  text-align: center;
+}
+
+/* Input mezők */
+input[type="email"],
+input[type="text"],
+input[type="password"],
+input[type="submit"] {
+  width: 100%;
+  padding: 12px;
+  margin: 15px 0;
+  border-radius: 8px;
+  border: 1px solid #00aff0;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: white;
+  font-size: 1rem;
+  outline: none;
+}
+
+/* Placeholder szín */
+input::placeholder {
+  color: #ccc;
+}
+
+/* Fókusz effekt */
+input[type="email"]:focus,
+input[type="text"]:focus,
+input[type="password"]:focus {
+  background-color: rgba(255,255,255,0.2);
+  box-shadow: 0 0 0 0.2rem rgba(0, 175, 240, 0.25);
+  border-color: #00aff0;
+}
+
+/* Checkbox */
+input[type="checkbox"] {
+  margin-right: 8px;
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+/* Gomb stílus */
+input[type="submit"] {
+  background-color: #00aff0;
+  border: none;
+  font-weight: 700;
+  color: black;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+  background-color: #0095d9;
+}
+
+/* Linkek */
+a {
+  color: #00aff0;
+  cursor: pointer;
+}
+
+/* Form címek */
+.form-header {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #00aff0;
+  display: block;
+  text-align: center;
+}
+
+/* Egyéb label-ek */
+label.form-link {
+  display: block;
+  margin-top: 10px;
+  color: #ccc;
+}
+
+/* Mobil nézet */
+@media (max-width: 480px) {
+  form {
+    padding: 20px;
+    width: 90%;
+  }
+}

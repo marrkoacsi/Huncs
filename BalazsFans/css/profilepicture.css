@@ -1,0 +1,77 @@
+body {
+  background: 
+    linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+    url('../img/pfchatter.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: #e0e0e0;
+  font-family: 'Montserrat', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  padding: 20px;
+}
+
+
+/* Form konténer */
+form {
+  background-color: #121212;
+  padding: 30px 40px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0, 175, 240, 0.6);
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+}
+
+/* File input */
+input[type="file"] {
+  border: 2px solid #00aff0;
+  border-radius: 8px;
+  padding: 8px;
+  color: #00aff0;
+  background-color: #000;
+  cursor: pointer;
+  transition: border-color 0.3s ease;
+  font-size: 1rem;
+}
+
+input[type="file"]:hover {
+  border-color: #0086c1;
+}
+
+/* Feltöltés gomb */
+input[type="submit"] {
+  margin-top: 20px;
+  background-color: #00aff0;
+  border: none;
+  padding: 12px 0;
+  border-radius: 8px;
+  color: #000;
+  font-weight: 700;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  user-select: none;
+}
+
+input[type="submit"]:hover {
+  background-color: #0086c1;
+}
+
+/* Placeholder szín file inputnál (ha szükséges) */
+input[type="file"]::file-selector-button {
+  background-color: #00aff0;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 8px;
+  color: #000;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+input[type="file"]::file-selector-button:hover {
+  background-color: #0086c1;
+}

@@ -1,0 +1,121 @@
+/* Alap beállítások */
+body {
+  font-family: 'Montserrat', sans-serif;
+  padding-top: 60px;
+  color: #333;
+  margin: 0;
+}
+
+/* Navigáció */
+.navbar {
+  background: #000;
+  border-bottom: 1px solid #2f2f2f;
+  padding: 0.5rem 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: white !important;
+}
+
+.navbar-brand span {
+  color: #00aff0;
+}
+
+.nav-link {
+  color: #e0e0e0 !important;
+  padding: 0.5rem 1rem !important;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: white !important;
+}
+
+.login-btn {
+  background: #00aff0;
+  color: black !important;
+  border-radius: 4px;
+  font-weight: 600;
+  margin-left: 0.5rem;
+}
+
+.login-btn:hover {
+  background: #0095d9;
+}
+
+.navbar-toggler {
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.8%29' stroke-linecap='round' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+/* Mobil nézet icon */
+
+/* Tartalom */
+.main-content {
+  padding: 40px 0;
+  background-color: #000;
+  color: white;
+}
+
+.container {
+  background-color: transparent;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/* Hero szakasz */
+.hero {
+  position: relative;
+  background-image: url('../img/balazshatter.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+  padding: 40px 20px;
+  overflow: hidden;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(0, 0, 0, 0.4); /* sötétítő réteg */
+  z-index: 1;
+}
+
+.hero .container {
+  position: relative;
+  z-index: 2;
+}
+
+
+
+/* Mobil nézet */
+@media (max-width: 768px) {
+  .hero {
+    padding: 100px 0 60px;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .navbar-brand {
+    font-size: 1.25rem;
+  }
+}

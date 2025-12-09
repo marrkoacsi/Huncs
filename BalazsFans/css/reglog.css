@@ -1,0 +1,137 @@
+/* Alap háttér és elrendezés */
+body.login-page {
+  background: linear-gradient(to right, #090e1a, #14213d);
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 20px;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Navigáció */
+nav {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav li {
+  display: inline-block;
+}
+
+nav a {
+  color: #00aff0;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Űrlap konténer */
+.form-container {
+  width: 100%;
+  max-width: 400px;
+}
+
+/* Doboz stílusok */
+.login-box {
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid #00aff0;
+  border-radius: 16px;
+  backdrop-filter: blur(8px);
+  padding: 30px;
+  margin: 0 auto;
+  box-shadow: 0 0 20px rgba(0, 175, 240, 0.2);
+}
+
+.login-box h2 {
+  color: #00aff0;
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Input mezők */
+.form-control {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: white;
+  border: 1px solid #00aff0;
+  border-radius: 8px;
+  padding: 10px;
+  width: 100%;
+  margin-bottom: 15px;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+.form-control::placeholder {
+  color: #ccc;
+}
+
+.form-control:focus {
+  outline: none;
+  border-color: #00aff0;
+  background-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 0 5px rgba(0, 175, 240, 0.4);
+}
+
+/* Gombok */
+.btn-primary {
+  background-color: #00aff0;
+  color: black;
+  border: none;
+  padding: 10px;
+  width: 100%;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+  background-color: #0095d9;
+}
+
+/* Link szövegek */
+.form-link {
+  text-align: center;
+  font-size: 0.9rem;
+  margin-top: 10px;
+}
+
+.form-link a {
+  color: #00aff0;
+  text-decoration: none;
+}
+
+.form-link a:hover {
+  text-decoration: underline;
+}
+
+/* Jelszó checkbox */
+.checkbox-group {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 15px;
+  font-size: 0.9rem;
+}
+
+/* Mobil */
+@media (max-width: 480px) {
+  .login-box {
+    padding: 20px;
+  }
+}
